@@ -21,6 +21,7 @@ extra["springCloudVersion"] = "2020.0.0-M6"
 
 dependencies {
 	implementation("com.google.cloud:spring-cloud-gcp-starter")
+	implementation("com.google.cloud:spring-cloud-gcp-starter-data-spanner")
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
