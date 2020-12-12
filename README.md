@@ -7,6 +7,12 @@ Cloud Spanner is a fully managed, mission-critical, relational database service 
 - com.google.cloud
   - spring-cloud-gcp-starter-data-spanner
 
+### Operate Cloud Spanner by gcloud CLI
+#### Enable Cloud Spanner
+```shell script
+$ gcloud services enable spanner.googleapis.com
+```
+
 ## Demo
 
 ## Features
