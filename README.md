@@ -13,6 +13,34 @@ Cloud Spanner is a fully managed, mission-critical, relational database service 
 $ gcloud services enable spanner.googleapis.com
 ```
 
+#### Cloud Spanner Command Groups
+```shell script
+$ gcloud spanner --help
+
+gcloud spanner GROUP [GCLOUD_WIDE_FLAG ...]
+
+GROUPS
+    GROUP is one of the following:
+
+     backups
+        Manage Cloud Spanner backups.
+
+     databases
+        Manage Cloud Spanner databases.
+
+     instance-configs
+        Manage Cloud Spanner instance configs.
+
+     instances
+        Manage Cloud Spanner instances.
+
+     operations
+        Manage Cloud Spanner operations.
+
+     rows
+        Manage the rows in Cloud Spanner databases.
+```
+
 ## Demo
 
 ## Features
