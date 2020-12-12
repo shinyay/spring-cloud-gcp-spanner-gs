@@ -1,4 +1,4 @@
-# Spring Cloud GCP for Spanner Getting Started
+# Spring Cloud GCP for Cloud Spanner Getting Started
 
 Overview
 
