@@ -41,6 +41,43 @@ GROUPS
         Manage the rows in Cloud Spanner databases.
 ```
 
+##### Commands for Instances
+```shell script
+$ gcloud spanner instances --help
+
+gcloud spanner instances COMMAND [GCLOUD_WIDE_FLAG ...]
+
+COMMANDS
+    COMMAND is one of the following:
+
+     add-iam-policy-binding
+        Add IAM policy binding to a Cloud Spanner instance.
+
+     create
+        Create a Cloud Spanner instance.
+
+     delete
+        Delete a Cloud Spanner instance.
+
+     describe
+        Describe a Cloud Spanner instance.
+
+     get-iam-policy
+        Get the IAM policy for a Cloud Spanner instance.
+
+     list
+        List the Cloud Spanner instances in this project.
+
+     remove-iam-policy-binding
+        Remove IAM policy binding of a Cloud Spanner instance.
+
+     set-iam-policy
+        Set the IAM policy for a Cloud Spanner instance.
+
+     update
+        Update a Cloud Spanner instance.
+```
+
 ## Demo
 
 ## Features
