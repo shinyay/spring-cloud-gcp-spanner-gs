@@ -1,4 +1,4 @@
-# Name
+# Spring Cloud GCP for Spanner Getting Started
 
 Overview
 
