@@ -1,6 +1,6 @@
 # Spring Cloud GCP for Cloud Spanner Getting Started
 
-Overview
+Cloud Spanner is a fully managed, mission-critical, relational database service that offers transactional consistency at global scale, schemas, SQL (ANSI 2011 with extensions), and automatic, synchronous replication for high availability.
 
 ## Description
 ### Dependency
