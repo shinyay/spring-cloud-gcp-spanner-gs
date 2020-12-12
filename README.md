@@ -3,6 +3,9 @@
 Overview
 
 ## Description
+### Dependency
+- com.google.cloud
+  - spring-cloud-gcp-starter-data-spanner
 
 ## Demo
 
