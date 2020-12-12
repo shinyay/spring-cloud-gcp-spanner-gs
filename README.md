@@ -78,6 +78,32 @@ COMMANDS
         Update a Cloud Spanner instance.
 ```
 
+##### Commands for Create Instance
+```shell script
+$ gcloud spanner instances create --help
+
+gcloud spanner instances create INSTANCE --config=CONFIG \
+                                         --description=DESCRIPTION \
+                                         --nodes=NODES [--async]
+
+REQUIRED FLAGS
+     --config=CONFIG
+        Instance configuration defines the geographic placement and replication
+        of the databases in that instance. Available configurations can be
+        found by running "gcloud spanner instance-configs list"
+
+     --description=DESCRIPTION
+        Description of the instance.
+
+     --nodes=NODES
+        Number of nodes for the instance.
+
+OPTIONAL FLAGS
+     --async
+        Return immediately, without waiting for the operation in progress to
+        complete.
+```
+
 ## Demo
 
 ## Features
