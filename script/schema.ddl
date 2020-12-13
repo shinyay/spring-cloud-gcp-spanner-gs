@@ -1,3 +1,2 @@
-CREATE TABLE employee ( employee_id decimal(4,0) NOT NULL, employee_name varchar(10) DEFAULT NULL, role varchar(9) DEFAULT NULL, department_id decimal(2,0) DEFAULT NULL);
-
-CREATE TABLE department ( department_id decimal(2,0) DEFAULT NULL, department_name varchar(14) DEFAULT NULL);
+CREATE TABLE employee ( employee_id INT64 NOT NULL, employee_name STRING(10), role STRING(9), department_id INT64) PRIMARY KEY (employee_id)
+CREATE TABLE department ( department_id INT64, department_name STRING(14)) PRIMARY KEY (department_id)
