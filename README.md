@@ -125,6 +125,14 @@ my-spanner  Spanner for Spring App  regional-us-central1  1           READY
 $ gcloud spanner databases create employee --instance=my-spanner
 ```
 
+##### List Databases
+```shell script
+$ gcloud spanner databases list --instance my-spanner
+
+NAME      STATE
+employee  READY
+```
+
 ## Demo
 
 ## Features
