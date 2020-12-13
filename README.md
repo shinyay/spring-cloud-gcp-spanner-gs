@@ -136,6 +136,7 @@ employee  READY
 #### Create Tables
 ```shell script
 $ gcloud spanner databases ddl update employee --instance=my-spanner --ddl="CREATE TABLE employee ( employee_id INT64 NOT NULL, employee_name STRING(10), role STRING(9), department_id INT64) PRIMARY KEY (employee_id)"
+$ gcloud spanner databases ddl update employee --instance=my-spanner --ddl="CREATE TABLE department ( department_id INT64, department_name STRING(14)) PRIMARY KEY (department_id)"
 ```
 
 ## Demo
