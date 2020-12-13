@@ -104,6 +104,13 @@ OPTIONAL FLAGS
         complete.
 ```
 
+#### Create Cloud Spanner Instance
+```shell script
+$ gcloud spanner instances create spanner-instance \
+    --config=regional-us-central1 \
+    --nodes=1 \
+    --description="A Spanner Instance"
+```
 ## Demo
 
 ## Features
