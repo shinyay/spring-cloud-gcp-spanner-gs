@@ -106,10 +106,10 @@ OPTIONAL FLAGS
 
 #### Create Cloud Spanner Instance
 ```shell script
-$ gcloud spanner instances create spanner-instance \
+$ gcloud spanner instances create my-spanner \
     --config=regional-us-central1 \
     --nodes=1 \
-    --description="A Spanner Instance"
+    --description="Spanner for Spring App"
 ```
 
 ##### List Cloud Spanner Instance
@@ -118,6 +118,11 @@ $ gcloud spanner instances list
 
 NAME              DISPLAY_NAME           CONFIG                NODE_COUNT  STATE
 spanner-instance  Spanner Demo Instance  regional-us-central1  1           READY
+```
+
+#### Create Database
+```shell script
+$ gcloud spanner databases create employees --instance=spanner-instance
 ```
 
 ## Demo
