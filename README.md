@@ -116,13 +116,13 @@ $ gcloud spanner instances create my-spanner \
 ```shell script
 $ gcloud spanner instances list
 
-NAME              DISPLAY_NAME           CONFIG                NODE_COUNT  STATE
-spanner-instance  Spanner Demo Instance  regional-us-central1  1           READY
+NAME        DISPLAY_NAME            CONFIG                NODE_COUNT  STATE
+my-spanner  Spanner for Spring App  regional-us-central1  1           READY
 ```
 
 #### Create Database
 ```shell script
-$ gcloud spanner databases create employees --instance=spanner-instance
+$ gcloud spanner databases create employee --instance=my-spanner
 ```
 
 ## Demo
