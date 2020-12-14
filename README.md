@@ -185,6 +185,7 @@ spring:
 |minSessions|Minimum number of sessions|
 |maxSessions|Maximum number of sessions|
 |maxIdleSessions|Maximum number of idle sessions|
+|writeSessionsFraction|Fraction of sessions|
 
 ## Demo
 
