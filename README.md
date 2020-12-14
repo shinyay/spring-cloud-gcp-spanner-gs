@@ -176,6 +176,8 @@ spring:
 |instance-id|Cloud Spanner Instance Name|
 |database|Cloud Spanner Database Name|
 |project-id|Google Cloud Project ID|
+|credentials.location|OAuth2 credentials for authenticating with the Google Cloud Spanner API|
+
 
 ## Demo
 
