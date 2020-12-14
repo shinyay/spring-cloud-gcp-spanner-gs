@@ -3,3 +3,4 @@ spring:
     gcp:
       spanner:
         instance-id: my-spanner
+        database: employee
