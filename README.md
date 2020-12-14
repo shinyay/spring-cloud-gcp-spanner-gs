@@ -175,6 +175,7 @@ spring:
 |----|-----------|
 |instance-id|Cloud Spanner Instance Name|
 |database|Cloud Spanner Database Name|
+|project-id|Google Cloud Project ID|
 
 ## Demo
 
