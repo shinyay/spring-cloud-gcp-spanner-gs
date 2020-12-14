@@ -182,6 +182,7 @@ spring:
 |createInterleavedTableDdlOnDeleteCascade||
 |numRpcChannels|Number of gRPC channels|
 |prefetchChunks|Number of chunks prefetched|
+|minSessions|Minimum number of sessions|
 
 ## Demo
 
