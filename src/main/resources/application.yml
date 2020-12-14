@@ -1,1 +1,5 @@
-
+spring:
+  cloud:
+    gcp:
+      spanner:
+        instance-id: my-spanner
