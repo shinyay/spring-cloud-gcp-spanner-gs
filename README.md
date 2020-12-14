@@ -184,6 +184,7 @@ spring:
 |prefetchChunks|Number of chunks prefetched|
 |minSessions|Minimum number of sessions|
 |maxSessions|Maximum number of sessions|
+|maxIdleSessions|Maximum number of idle sessions|
 
 ## Demo
 
