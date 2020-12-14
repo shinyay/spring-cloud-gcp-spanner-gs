@@ -174,6 +174,7 @@ spring:
 |Name|Description|
 |----|-----------|
 |instance-id|Cloud Spanner Instance Name|
+|database|Cloud Spanner Database Name|
 
 ## Demo
 
