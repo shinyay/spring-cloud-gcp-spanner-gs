@@ -180,7 +180,7 @@ spring:
 |credentials.encoded-key|Base64-encoded OAuth2 credentials for Spanner API|
 |credentials.scopes|OAuth2 Scope for Spanner Credential<br> Default: `https://www.googleapis.com/auth/spanner.data`|
 |createInterleavedTableDdlOnDeleteCascade||
-
+|numRpcChannels|Number of gRPC channels|
 
 ## Demo
 
