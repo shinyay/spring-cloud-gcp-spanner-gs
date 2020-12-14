@@ -183,6 +183,7 @@ spring:
 |numRpcChannels|Number of gRPC channels|
 |prefetchChunks|Number of chunks prefetched|
 |minSessions|Minimum number of sessions|
+|maxSessions|Maximum number of sessions|
 
 ## Demo
 
