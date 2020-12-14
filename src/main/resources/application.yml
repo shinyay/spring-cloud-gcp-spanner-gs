@@ -4,3 +4,4 @@ spring:
       spanner:
         instance-id: my-spanner
         database: employee
+      project-id: ${GOOGLE_CLOUD_PROJECT}
