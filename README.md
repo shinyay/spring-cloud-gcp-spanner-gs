@@ -171,6 +171,10 @@ spring:
         database: employee
 ```
 
+|Name|Description|
+|----|-----------|
+|instance-id|Cloud Spanner Instance Name|
+
 ## Demo
 
 ## Features
