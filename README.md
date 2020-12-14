@@ -156,6 +156,21 @@ CREATE TABLE employee (
 ) PRIMARY KEY(employee_id);
 ```
 
+### Spring Cloud GCP
+#### Spring Cloud GCP - Cloud Spanner Configuration
+
+- Instance ID: `my-spanner`
+- Database Name: `employee`
+
+```yaml
+spring:
+  cloud:
+    gcp:
+      spanner:
+        instance-id: my-spanner
+        database: employee
+```
+
 ## Demo
 
 ## Features
