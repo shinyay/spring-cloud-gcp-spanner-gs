@@ -181,6 +181,7 @@ spring:
 |credentials.scopes|OAuth2 Scope for Spanner Credential<br> Default: `https://www.googleapis.com/auth/spanner.data`|
 |createInterleavedTableDdlOnDeleteCascade||
 |numRpcChannels|Number of gRPC channels|
+|prefetchChunks|Number of chunks prefetched|
 
 ## Demo
 
