@@ -188,6 +188,17 @@ spring:
 |writeSessionsFraction|Fraction of sessions|
 |keepAliveIntervalMinutes|How long to keep idle sessions alive|
 
+### Spring Data JDBC
+#### Entity
+Spring Data JDBC **requires @Id** for entity.
+
+```kotlin
+data class Employee(@Id val id: Long,
+                    val name: String,
+                    val role: String,
+                    val department_id: Long)
+``` 
+
 ## Demo
 
 ## Features
