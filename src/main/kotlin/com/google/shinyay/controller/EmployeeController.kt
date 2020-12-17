@@ -8,5 +8,5 @@ import org.springframework.web.bind.annotation.RestController
 class EmployeeController(val repository: EmployeeRepository) {
 
     @GetMapping("/employees")
-    fun findAllEmployees() {}
+    fun findAllEmployees() = repository.getEmployees()
 }
