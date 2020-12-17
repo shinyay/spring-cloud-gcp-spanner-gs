@@ -2,7 +2,6 @@ package com.google.shinyay.repository
 
 import com.google.cloud.spring.data.spanner.repository.SpannerRepository
 import com.google.shinyay.entity.Employee
-import org.springframework.jdbc.core.JdbcTemplate
 import org.springframework.stereotype.Repository
 
 @Repository
