@@ -164,6 +164,10 @@ $ gcloud spanner databases execute-sql employee --instance=my-spanner --sql="INS
 $ gcloud spanner databases execute-sql employee --instance=my-spanner --sql="INSERT employee (employee_id, employee_name, role, department_id) VALUES (4, 'David', 'Marketing', 2)"
 ```
 
+```shell script
+$ curl -X POST -H "Content-Type: application/json" -d '{"id":5,"name":"Eve","role":"Developer","department_id":1}' localhost:8080/employee
+```
+
 ### Spring Cloud GCP
 #### Spring Cloud GCP - Cloud Spanner Configuration
 
