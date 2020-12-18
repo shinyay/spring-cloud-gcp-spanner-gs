@@ -156,6 +156,14 @@ CREATE TABLE employee (
 ) PRIMARY KEY(employee_id);
 ```
 
+#### Create Sample Data
+```shell script
+$ gcloud spanner databases execute-sql employee --instance=my-spanner --sql="INSERT employee (employee_id, employee_name, role, department_id) VALUES (1, 'Alice', 'Developer', 1)"
+$ gcloud spanner databases execute-sql employee --instance=my-spanner --sql="INSERT employee (employee_id, employee_name, role, department_id) VALUES (2, 'Bob', 'Designer', 1)"
+$ gcloud spanner databases execute-sql employee --instance=my-spanner --sql="INSERT employee (employee_id, employee_name, role, department_id) VALUES (3, 'Carol', 'PO', 1)"
+$ gcloud spanner databases execute-sql employee --instance=my-spanner --sql="INSERT employee (employee_id, employee_name, role, department_id) VALUES (4, 'David', 'Marketing', 2)"
+```
+
 ### Spring Cloud GCP
 #### Spring Cloud GCP - Cloud Spanner Configuration
 
