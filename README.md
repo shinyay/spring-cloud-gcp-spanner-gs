@@ -206,10 +206,14 @@ Spring Data JDBC **requires @Id** for entity.
 Spring Data JDBC uses the @Id annotation to identify entities.
 
 ```kotlin
-data class Employee(@Id val id: Long,
-                    val name: String,
-                    val role: String,
-                    val department_id: Long)
+@Table(name = "employee")
+data class Employee(@PrimaryKey(keyOrder = 1)
+                    @Column(name="employee_id")
+                    val id: Long,
+                    @Column(name = "employee_name")
+                    val name: String?,
+                    val role: String?,
+                    val department_id: Long?)
 ``` 
 
 ## Demo
