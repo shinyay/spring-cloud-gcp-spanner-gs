@@ -216,6 +216,12 @@ data class Employee(@PrimaryKey(keyOrder = 1)
                     val department_id: Long?)
 ``` 
 
+##### Annotation for Spanner
+
+|Annotation|Description|
+|----------|-----------|
+|@Table||
+
 ## Demo
 
 ## Features
