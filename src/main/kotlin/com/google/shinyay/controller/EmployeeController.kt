@@ -16,8 +16,16 @@ class EmployeeController(val repository: EmployeeRepository) {
     }
 
     @PutMapping("/employees/{id}")
-    fun updateEmployee() {
-        
+    fun updateEmployee(@RequestBody updateEmployee: Employee, @PathVariable id: Long) {
+        repository.findById(id)
+                .map { employee ->
+                    employee.name = updateEmployee.name
+                    employee.role = updateEmployee.role
+                    repository.save(employee)
+                }.orElseGet {
+                    updateEmployee.id = id
+                    repository.save(updateEmployee)
+                }
     }
 
     @DeleteMapping("/employees/{id}")
