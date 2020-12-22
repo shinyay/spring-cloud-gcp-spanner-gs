@@ -221,6 +221,7 @@ data class Employee(@PrimaryKey(keyOrder = 1)
 |Annotation|Description|
 |----------|-----------|
 |@Table||
+|@PrimaryKey||
 
 ## Demo
 
