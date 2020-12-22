@@ -3,12 +3,18 @@ package com.google.shinyay.controller;
 import com.google.shinyay.entity.Employee
 import com.google.shinyay.repository.EmployeeRepository
 import org.springframework.web.bind.annotation.*
+import java.util.*
 
 @RestController
 class EmployeeController(val repository: EmployeeRepository) {
 
     @GetMapping("/employees")
     fun findAllEmployees(): MutableIterable<Employee> = repository.findAll()
+
+    @GetMapping("/employees/{id}")
+    fun findEmployeeById(@PathVariable id: Long): Employee? {
+        return repository.findById(id).orElseThrow()
+    }
 
     @PostMapping("/employee")
     fun registerEmployee(@RequestBody employee: Employee) {
