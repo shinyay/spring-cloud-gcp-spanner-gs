@@ -220,7 +220,7 @@ data class Employee(@PrimaryKey(keyOrder = 1)
 
 |Annotation|Description|
 |----------|-----------|
-|@Table||
+|@Table|Name of the Cloud Spanner table that stores instances of the annotated class|
 |@PrimaryKey||
 |@Column||
 
