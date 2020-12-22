@@ -222,6 +222,7 @@ data class Employee(@PrimaryKey(keyOrder = 1)
 |----------|-----------|
 |@Table||
 |@PrimaryKey||
+|@Column||
 
 ## Demo
 
