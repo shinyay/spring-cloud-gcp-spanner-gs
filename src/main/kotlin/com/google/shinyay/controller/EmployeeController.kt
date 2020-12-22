@@ -14,4 +14,9 @@ class EmployeeController(val repository: EmployeeRepository) {
     fun registerEmployee(@RequestBody employee: Employee) {
         repository.save(employee)
     }
+
+    @DeleteMapping("/employees/{id}")
+    fun deleteEmployee(@PathVariable id: Long) {
+        repository.deleteById(id)
+    }
 }
