@@ -225,11 +225,19 @@ data class Employee(@PrimaryKey(keyOrder = 1)
 |@Column|Different column name than that of the property|
 |@Interleaved|Applied to Collection property which is resolved as child entity type|
 
-#### Repository
+#### SpannerRepository
 - `SpannerRepository` extends `CrudRepository` and `PagingAndSortingRepository`
+
+##### Query Methods
+`SpannerRepository` provides Query Methods.
+
+- Query methods by convention
+- Custom SQL query methods
 
 #### SpannerOperations
 `SpannerTemplate` is the implementation of `SpannerOperations` interface.
+
+
 
 ## Demo
 
