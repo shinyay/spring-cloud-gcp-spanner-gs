@@ -236,6 +236,17 @@ data class Employee(@PrimaryKey(keyOrder = 1)
 
 Using `Spring Data Query naming convention` (https://docs.spring.io/spring-data/data-commons/docs/current/reference/html/#repositories.query-methods.query-creation) , method name is generated.
 
+```
+findTop3DistinctByActionAndSymbolIgnoreCaseOrTraderIdOrderBySymbolDesc(String action, String symbol, String traderId)
+```
+
+```sql
+SELECT DISTINCT * FROM trades
+WHERE ACTION = ? AND LOWER(SYMBOL) = LOWER(?) AND TRADER_ID = ?
+ORDER BY SYMBOL DESC
+LIMIT 3
+```
+
 #### SpannerOperations
 `SpannerTemplate` is the implementation of `SpannerOperations` interface.
 
