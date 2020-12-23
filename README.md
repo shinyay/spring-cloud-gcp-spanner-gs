@@ -222,7 +222,8 @@ data class Employee(@PrimaryKey(keyOrder = 1)
 |----------|-----------|
 |@Table|Name of the Cloud Spanner table that stores instances of the annotated class|
 |@PrimaryKey|Identification of the one or more ID properties corresponding to the primary key|
-|@Column|Different column name than that of the property |
+|@Column|Different column name than that of the property|
+|@Interleaved|Applied to Collection property which is resolved as child entity type|
 
 ## Demo
 
