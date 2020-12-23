@@ -234,6 +234,8 @@ data class Employee(@PrimaryKey(keyOrder = 1)
 - Query methods by convention
 - Custom SQL query methods
 
+Using `Spring Data Query naming convention` (https://docs.spring.io/spring-data/data-commons/docs/current/reference/html/#repositories.query-methods.query-creation) , method name is generated.
+
 #### SpannerOperations
 `SpannerTemplate` is the implementation of `SpannerOperations` interface.
 
