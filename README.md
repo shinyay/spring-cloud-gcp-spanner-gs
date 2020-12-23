@@ -228,6 +228,9 @@ data class Employee(@PrimaryKey(keyOrder = 1)
 #### Repository
 - `SpannerRepository` extends `CrudRepository` and `PagingAndSortingRepository`
 
+#### SpannerOperations
+`SpannerTemplate` is the implementation of `SpannerOperations` interface.
+
 ## Demo
 
 ## Features
