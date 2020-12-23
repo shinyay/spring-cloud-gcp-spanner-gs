@@ -225,6 +225,9 @@ data class Employee(@PrimaryKey(keyOrder = 1)
 |@Column|Different column name than that of the property|
 |@Interleaved|Applied to Collection property which is resolved as child entity type|
 
+#### Repository
+- `SpannerRepository` extends `PagingAndSortingRepository`
+
 ## Demo
 
 ## Features
