@@ -226,7 +226,7 @@ data class Employee(@PrimaryKey(keyOrder = 1)
 |@Interleaved|Applied to Collection property which is resolved as child entity type|
 
 #### Repository
-- `SpannerRepository` extends `PagingAndSortingRepository`
+- `SpannerRepository` extends `CrudRepository` and `PagingAndSortingRepository`
 
 ## Demo
 
