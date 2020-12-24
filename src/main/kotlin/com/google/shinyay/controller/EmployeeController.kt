@@ -22,8 +22,8 @@ class EmployeeController(val repository: EmployeeRepository) {
     }
 
     @PutMapping("/employees/{id}")
-    fun updateEmployee(@RequestBody updateEmployee: Employee, @PathVariable id: Long) {
-        repository.findById(id)
+    fun updateEmployee(@RequestBody updateEmployee: Employee, @PathVariable id: Long): Employee? {
+        return repository.findById(id)
                 .map { employee ->
                     employee.name = updateEmployee.name
                     employee.role = updateEmployee.role
