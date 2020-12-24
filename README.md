@@ -247,6 +247,19 @@ ORDER BY SYMBOL DESC
 LIMIT 3
 ```
 
+##### Query Keywords
+- [Repository query keywords](https://docs.spring.io/spring-data/data-commons/docs/current/reference/html/#repository-query-keywords)
+
+|Keyword|Description|
+|-------|-----------|
+|find…By<br>read…By<br>get…By<br>query…By<br>search…By<br>stream…By||
+|exists…By||
+|count…By||
+|delete…By<br>>remove…By||
+|…First<number>…<br>>…Top<number>…||
+|…Distinct…||
+
+
 #### SpannerOperations
 `SpannerTemplate` is the implementation of `SpannerOperations` interface.
 
