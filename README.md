@@ -270,6 +270,11 @@ $ ./gradlew clean bootRun
 $ curl -X GET localhost:8080/employees
 ```
 
+##### Find a specific Employee by ID
+```shell script
+$ curl -X GET localhost:8080/employees/1
+```
+
 ## Features
 
 - feature:1
