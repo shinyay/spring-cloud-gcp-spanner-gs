@@ -275,10 +275,16 @@ $ curl -X GET localhost:8080/employees
 $ curl -X GET localhost:8080/employees/1
 ```
 
-##### Register a Employee
+##### Register an Employee
 ```shell script
 $ curl -X POST -H "Content-Type: application/json" -d '{"id":5,"name":"Frank","role":"Sales","department_id":2}' localhost:8080/employee
 ```
+
+##### Update an Employee
+```shell script
+$ curl -X PUT -H "Content-Type: application/json" -d '{"id":5,"name":"Frank","role":"Developer","department_id":2}' localhost:8080/employees/5
+```
+
 
 ## Features
 
