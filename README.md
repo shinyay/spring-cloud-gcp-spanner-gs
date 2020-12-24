@@ -253,6 +253,14 @@ LIMIT 3
 
 
 ## Demo
+### Run Spring Boot App
+#### Set GOOGLE_CLOUD_PROJECT env
+```shell script
+$ set -x GOOGLE_CLOUD_PROJECT (gcloud config get-value project)
+```
+
+
+
 
 ## Features
 
