@@ -264,6 +264,12 @@ $ set -x GOOGLE_CLOUD_PROJECT (gcloud config get-value project)
 $ ./gradlew clean bootRun
 ```
 
+#### Access App
+##### Find Employees
+```shell script
+$ curl -X GET localhost:8080/employees
+```
+
 ## Features
 
 - feature:1
