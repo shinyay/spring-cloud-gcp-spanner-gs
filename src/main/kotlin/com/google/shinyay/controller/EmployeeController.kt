@@ -20,6 +20,9 @@ class EmployeeController(val repository: EmployeeRepository, val employeeCustomR
         return repository.findById(id).orElseThrow()
     }
 
+    @GetMapping("/{id}")
+    fun findById(@PathVariable id: Long) = employeeCustomRepository.findEmployeeById(id)
+
     @PostMapping("/employee")
     fun registerEmployee(@RequestBody employee: Employee): Employee {
         return repository.save(employee)
