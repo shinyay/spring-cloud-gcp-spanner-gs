@@ -275,6 +275,11 @@ $ curl -X GET localhost:8080/employees
 $ curl -X GET localhost:8080/employees/1
 ```
 
+##### Register a Employee
+```shell script
+$ curl -X POST -H "Content-Type: application/json" -d '{"id":5,"name":"Frank","role":"Sales","department_id":2}' localhost:8080/employee
+```
+
 ## Features
 
 - feature:1
