@@ -259,8 +259,10 @@ LIMIT 3
 $ set -x GOOGLE_CLOUD_PROJECT (gcloud config get-value project)
 ```
 
-
-
+#### Run App
+```shell script
+$ ./gradlew clean bootRun
+```
 
 ## Features
 
