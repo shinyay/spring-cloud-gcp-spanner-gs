@@ -13,10 +13,15 @@ import org.springframework.stereotype.Component
 class EmployeeCustomRepository(val spannerTemplate: SpannerTemplate) {
 
     fun findEmployeeAll(): MutableList<Employee>? {
-        val spannerQueryOptions = SpannerQueryOptions().setTimestamp(Timestamp.now())
 //        return spannerTemplate.query(Employee::class.java, Statement.of("SELECT * FROM employee"), spannerQueryOptions)
-        return spannerTemplate.queryAll(Employee::class.java, SpannerPageableQueryOptions().setSort(Sort.by("role")))
+        return spannerTemplate.queryAll(Employee::class.java,
+                SpannerPageableQueryOptions().setSort(Sort.by("role")))
     }
 
+    fun findEmployeeById(id: Long): MutableList<Employee>? {
+        return spannerTemplate.query(Employee::class.java,
+                Statement.of("SELECT * FROM employee WHERE employee_id = $id"),
+                SpannerQueryOptions().setTimestamp(Timestamp.now()))
+    }
 
 }
