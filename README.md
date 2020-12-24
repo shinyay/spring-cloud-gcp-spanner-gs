@@ -285,6 +285,10 @@ $ curl -X POST -H "Content-Type: application/json" -d '{"id":5,"name":"Frank","r
 $ curl -X PUT -H "Content-Type: application/json" -d '{"id":5,"name":"Frank","role":"Developer","department_id":2}' localhost:8080/employees/5
 ```
 
+##### Delete an Employee
+```shell script
+$ curl -X DELETE localhost:8080/employees/5
+```
 
 ## Features
 
