@@ -1,15 +1,19 @@
 package com.google.shinyay.controller;
 
 import com.google.shinyay.entity.Employee
+import com.google.shinyay.repository.EmployeeCustomRepository
 import com.google.shinyay.repository.EmployeeRepository
 import org.springframework.web.bind.annotation.*
 import java.util.*
 
 @RestController
-class EmployeeController(val repository: EmployeeRepository) {
+class EmployeeController(val repository: EmployeeRepository, val employeeCustomRepository: EmployeeCustomRepository) {
 
     @GetMapping("/employees")
     fun findAllEmployees(): MutableIterable<Employee> = repository.findAll()
+
+    @GetMapping("/all")
+    fun findAll(): MutableList<Employee>? = employeeCustomRepository.findEmployeeAll()
 
     @GetMapping("/employees/{id}")
     fun findEmployeeById(@PathVariable id: Long): Employee? {
