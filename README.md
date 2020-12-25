@@ -272,6 +272,9 @@ public <T> java.util.List<T> query(Class<T> entityClass,
                                    com.google.cloud.spring.data.spanner.core.SpannerQueryOptions options)
 ```
 
+- `SpannerTemplate#queryAll`
+  - Finds all objects of the given type.
+
 ## Demo
 ### Run Spring Boot App
 #### Set GOOGLE_CLOUD_PROJECT env
