@@ -293,6 +293,10 @@ public <T> java.util.List<T> queryAll(Class<T> entityClass,
 - Strong Read
 - Stale Read
 
+All reads and queries are **Strong Read** by default.
+**Strong Read** is a read at a current time and is guaranteed to see all data that has been committed up until the start of this read.
+
+
 ## Demo
 ### Run Spring Boot App
 #### Set GOOGLE_CLOUD_PROJECT env
