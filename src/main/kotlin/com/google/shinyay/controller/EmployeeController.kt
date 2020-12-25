@@ -20,6 +20,9 @@ class EmployeeController(val repository: EmployeeRepository, val employeeCustomR
         return repository.findById(id).orElseThrow()
     }
 
+    @GetMapping("/all-employees")
+    fun readAll(): MutableList<Employee>? = employeeCustomRepository.readEmployees()
+
     @GetMapping("/{id}")
     fun findById(@PathVariable id: Long) = employeeCustomRepository.findEmployeeById(id)
 
