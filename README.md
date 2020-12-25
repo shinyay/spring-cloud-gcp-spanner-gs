@@ -263,6 +263,9 @@ LIMIT 3
 #### SpannerOperations
 `SpannerTemplate` is the implementation of `SpannerOperations` interface.
 
+- Query
+- Read
+
 ##### Query
 - `SpannerTemplate#query`
   - Find objects by using an SQL statement.
