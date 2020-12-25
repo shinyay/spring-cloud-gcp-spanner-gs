@@ -264,6 +264,8 @@ LIMIT 3
 `SpannerTemplate` is the implementation of `SpannerOperations` interface.
 
 ##### Query
+- `SpannerTemplate#query`
+  - Find objects by using an SQL statement.
 ```
 public <T> java.util.List<T> query(Class<T> entityClass,
                                    com.google.cloud.spanner.Statement statement,
