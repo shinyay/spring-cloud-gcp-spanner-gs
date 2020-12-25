@@ -263,7 +263,12 @@ LIMIT 3
 #### SpannerOperations
 `SpannerTemplate` is the implementation of `SpannerOperations` interface.
 
-
+##### Query
+```
+public <T> java.util.List<T> query(Class<T> entityClass,
+                                   com.google.cloud.spanner.Statement statement,
+                                   com.google.cloud.spring.data.spanner.core.SpannerQueryOptions options)
+```
 
 ## Demo
 ### Run Spring Boot App
