@@ -23,4 +23,7 @@ class EmployeeCustomRepository(val spannerTemplate: SpannerTemplate) {
                 SpannerQueryOptions().setTimestamp(Timestamp.now()))
     }
 
+    fun readEmployees(): MutableList<Employee>? {
+        return spannerTemplate.readAll(Employee::class.java)
+    }
 }
