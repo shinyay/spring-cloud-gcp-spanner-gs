@@ -295,7 +295,7 @@ public <T> java.util.List<T> queryAll(Class<T> entityClass,
 
 All reads and queries are **Strong Read** by default.
 **Strong Read** is a read at a current time and is guaranteed to see all data that has been committed up until the start of this read.
-
+**Stale Read** is read at a timestamp in the past. 
 
 ## Demo
 ### Run Spring Boot App
