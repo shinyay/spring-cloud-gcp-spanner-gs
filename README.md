@@ -280,6 +280,12 @@ public <T> java.util.List<T> queryAll(Class<T> entityClass,
                                       com.google.cloud.spring.data.spanner.core.SpannerPageableQueryOptions options)
 ```
 
+##### SpannerQueryOptions
+- `setTimestamp(Timestamp timestamp)`
+- `setTimestampBound(TimestampBound timestampBound)`
+- `setAllowPartialRead(boolean allowPartialRead)`
+ - In case the rows returned by the query have fewer columns than the entity that it will be mapped to, Spring Data will map the returned columns only.
+
 ## Demo
 ### Run Spring Boot App
 #### Set GOOGLE_CLOUD_PROJECT env
