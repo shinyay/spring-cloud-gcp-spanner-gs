@@ -302,6 +302,15 @@ employee_id  employee_name  role       department_id
 4            David          Marketing  2
 ```
 
+```shell script
+ gcloud spanner databases execute-sql employee --instance=my-spanner --sql="SELECT * FROM employee LIMIT 3"
+
+employee_id  employee_name  role       department_id
+1            Alice          Developer  1
+2            Bob            Designer   1
+3            Carol          PO         1
+```
+
 ##### Read
 - Strong Read
 - Stale Read
