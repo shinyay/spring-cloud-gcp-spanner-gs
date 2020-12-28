@@ -395,6 +395,11 @@ $ curl -X GET localhost:8080/all/3
 $ curl -X GET "localhost:8080/all/3?offset=1"
 ```
 
+##### Find Employees with Sorting
+```shell script
+$ curl -X GET "localhost:8080/all?sort=name"
+```
+
 ## Features
 
 - feature:1
