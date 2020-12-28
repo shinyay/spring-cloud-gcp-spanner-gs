@@ -23,6 +23,11 @@ class EmployeeCustomRepository(val spannerTemplate: SpannerTemplate) {
                 SpannerQueryOptions().setTimestamp(Timestamp.now()))
     }
 
+    fun findEmployeeAllwithLimit(limit: Int): MutableList<Employee>? {
+        return spannerTemplate.queryAll(Employee::class.java,
+        SpannerPageableQueryOptions().setLimit(limit))
+    }
+
     fun readEmployees(): MutableList<Employee>? {
         return spannerTemplate.readAll(Employee::class.java)
     }
