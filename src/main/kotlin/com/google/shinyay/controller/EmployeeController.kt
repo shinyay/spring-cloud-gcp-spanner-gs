@@ -13,7 +13,7 @@ class EmployeeController(val repository: EmployeeRepository, val employeeCustomR
     fun findAllEmployees(): MutableIterable<Employee> = repository.findAll()
 
     @GetMapping("/all")
-    fun findAll(): MutableList<Employee>? = employeeCustomRepository.findEmployeeAll()
+    fun findAll(): MutableList<Employee>? = employeeCustomRepository.findEmployeeAllwithSort()
 
     @GetMapping("/employees/{id}")
     fun findEmployeeById(@PathVariable id: Long): Employee? {
