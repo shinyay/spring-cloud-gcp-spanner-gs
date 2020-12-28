@@ -400,6 +400,11 @@ $ curl -X GET "localhost:8080/all/3?offset=1"
 $ curl -X GET "localhost:8080/all?sort=name"
 ```
 
+### Clean Up Spanner Instance
+```shell script
+$ gcloud spanner instances delete my-spanner
+```
+
 ## Features
 
 - feature:1
