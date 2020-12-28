@@ -8,6 +8,7 @@ import com.google.cloud.spring.data.spanner.core.SpannerTemplate
 import com.google.shinyay.entity.Employee
 import org.springframework.data.domain.Sort
 import org.springframework.stereotype.Component
+import org.springframework.web.bind.annotation.RequestParam
 
 @Component
 class EmployeeCustomRepository(val spannerTemplate: SpannerTemplate) {
@@ -26,6 +27,11 @@ class EmployeeCustomRepository(val spannerTemplate: SpannerTemplate) {
     fun findEmployeeAllWithLimit(limit: Int): MutableList<Employee>? {
         return spannerTemplate.queryAll(Employee::class.java,
                 SpannerPageableQueryOptions().setLimit(limit))
+    }
+
+    fun findEmployeeAllWithLimitAndOffset(limit: Int, @RequestParam offset: Long): MutableList<Employee>? {
+        return spannerTemplate.queryAll(Employee::class.java,
+                SpannerPageableQueryOptions().setLimit(limit).setOffset(offset))
     }
 
     fun readEmployees(): MutableList<Employee>? {
