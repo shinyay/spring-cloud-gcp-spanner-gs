@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component
 @Component
 class EmployeeCustomRepository(val spannerTemplate: SpannerTemplate) {
 
-    fun findEmployeeAll(): MutableList<Employee>? {
+    fun findEmployeeAllwithSort(): MutableList<Employee>? {
         return spannerTemplate.queryAll(Employee::class.java,
                 SpannerPageableQueryOptions().setSort(Sort.by("role")))
     }
