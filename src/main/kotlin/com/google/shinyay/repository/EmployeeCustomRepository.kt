@@ -13,9 +13,9 @@ import org.springframework.web.bind.annotation.RequestParam
 @Component
 class EmployeeCustomRepository(val spannerTemplate: SpannerTemplate) {
 
-    fun findEmployeeAllwithSort(): MutableList<Employee>? {
+    fun findEmployeeAllwithSort(sort: String?): MutableList<Employee>? {
         return spannerTemplate.queryAll(Employee::class.java,
-                SpannerPageableQueryOptions().setSort(Sort.by("role")))
+                SpannerPageableQueryOptions().setSort(Sort.by(sort)))
     }
 
     fun findEmployeeById(id: Long): MutableList<Employee>? {
