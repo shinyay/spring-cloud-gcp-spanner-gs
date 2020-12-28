@@ -29,7 +29,7 @@ class EmployeeCustomRepository(val spannerTemplate: SpannerTemplate) {
                 SpannerPageableQueryOptions().setLimit(limit))
     }
 
-    fun findEmployeeAllWithLimitAndOffset(limit: Int, @RequestParam offset: Long): MutableList<Employee>? {
+    fun findEmployeeAllWithLimitAndOffset(limit: Int, offset: Long): MutableList<Employee>? {
         return spannerTemplate.queryAll(Employee::class.java,
                 SpannerPageableQueryOptions().setLimit(limit).setOffset(offset))
     }
