@@ -385,6 +385,11 @@ $ curl -X PUT -H "Content-Type: application/json" -d '{"id":5,"name":"Frank","ro
 $ curl -X DELETE localhost:8080/employees/5
 ```
 
+##### Find Employees with Limit clause
+```shell script
+$ curl -X GET localhost:8080/all/3
+```
+
 ## Features
 
 - feature:1
