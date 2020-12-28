@@ -320,6 +320,13 @@ employee_id  employee_name  role       department_id
 4            David          Marketing  2
 ```
 
+```kotlin
+fun findEmployeeAllWithLimitAndOffset(limit: Int, offset: Long?): MutableList<Employee>? {
+    return spannerTemplate.queryAll(Employee::class.java,
+            SpannerPageableQueryOptions().setLimit(limit).setOffset(offset))
+}
+```
+
 
 ##### Read
 - Strong Read
