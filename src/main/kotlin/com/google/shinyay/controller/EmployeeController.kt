@@ -16,7 +16,7 @@ class EmployeeController(val repository: EmployeeRepository, val employeeCustomR
     fun findAll(): MutableList<Employee>? = employeeCustomRepository.findEmployeeAllwithSort()
 
     @GetMapping("/all/{limit}")
-    fun findAllwithLimit(@PathVariable limit: Int): MutableList<Employee>? = employeeCustomRepository.findEmployeeAllwithLimit(limit)
+    fun findAllwithLimit(@PathVariable limit: Int): MutableList<Employee>? = employeeCustomRepository.findEmployeeAllWithLimit(limit)
 
     @GetMapping("/employees/{id}")
     fun findEmployeeById(@PathVariable id: Long): Employee? {
