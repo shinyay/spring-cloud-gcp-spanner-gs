@@ -289,6 +289,19 @@ public <T> java.util.List<T> queryAll(Class<T> entityClass,
 - `setAllowPartialRead(boolean allowPartialRead)`
  - In case the rows returned by the query have fewer columns than the entity that it will be mapped to, Spring Data will map the returned columns only.
 
+##### Limit and Offset
+**Query** can use `LIMIT` and `OFFSET` clauses
+
+```shell script
+$ gcloud spanner databases execute-sql employee --instance=my-spanner --sql="SELECT * FROM employee"
+
+employee_id  employee_name  role       department_id
+1            Alice          Developer  1
+2            Bob            Designer   1
+3            Carol          PO         1
+4            David          Marketing  2
+```
+
 ##### Read
 - Strong Read
 - Stale Read
@@ -300,6 +313,9 @@ All reads and queries are **Strong Read** by default.
 ```
 public <T> java.util.List<T> readAll(Class<T> entityClass)
 ```
+
+
+
 
 ## Demo
 ### Run Spring Boot App
