@@ -390,6 +390,11 @@ $ curl -X DELETE localhost:8080/employees/5
 $ curl -X GET localhost:8080/all/3
 ```
 
+##### Find Employees with Limit and Offset clause
+```shell script
+$ curl -X GET "localhost:8080/all/3?offset=1"
+```
+
 ## Features
 
 - feature:1
